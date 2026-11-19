@@ -129,6 +129,11 @@ Tests are fully offline: synthetic config fixtures, no model, no network, no chi
 
 ![Demo](docs/demo.png)
 
+
+## Listed in
+
+- [awesome-ai-plugins — DeepSeek Harness Plugins](https://github.com/hashgraph-online/awesome-ai-plugins#deepseek-harness-plugins) (security scan passed).
+
 ## Related plugins
 
 - [dsh-plugin-safe-route](https://github.com/SSHOOTING/dsh-plugin-safe-route)
