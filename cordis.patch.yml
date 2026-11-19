@@ -1,0 +1,7 @@
+# Official bundle layer. `dsh plugin add dsh-plugin-mcp-guard` applies this row
+# into the profile. Rows resolve by package name so the installed copy is what boots.
+- insert:
+    - id: dsh-plugin-mcp-guard
+      name: dsh-plugin-mcp-guard
+      config:
+        mcpServers: {}
