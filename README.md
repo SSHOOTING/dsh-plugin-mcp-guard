@@ -124,6 +124,11 @@ Tests are fully offline: synthetic config fixtures, no model, no network, no chi
 
 [MIT](LICENSE)
 
+
+## Demo
+
+![Demo](docs/demo.png)
+
 ## Related plugins
 
 - [dsh-plugin-safe-route](https://github.com/SSHOOTING/dsh-plugin-safe-route)

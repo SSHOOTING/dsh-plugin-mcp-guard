@@ -130,3 +130,6 @@ npm pack --dry-run
 - [dsh-plugin-session-archive](https://github.com/SSHOOTING/dsh-plugin-session-archive)
 - [dsh-plugin-token-budget](https://github.com/SSHOOTING/dsh-plugin-token-budget)
 - [dsh-plugin-free-model-advisor](https://github.com/SSHOOTING/dsh-plugin-free-model-advisor)
+## Demo
+
+![Demo](docs/demo.png)
