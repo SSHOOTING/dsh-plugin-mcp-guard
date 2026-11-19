@@ -10,3 +10,9 @@
 - Config is read from DSH's `apply(ctx, config)` second argument; command registration is tied to `ctx.effect()` so disable/reload leaves no duplicate.
 - Defensive normalization: unknown fields ignored, malformed values defaulted, all emitted strings redacted. No network, process spawning, or file writes.
 - Fully offline test suite with synthetic config fixtures.
+
+## 0.1.1 (2026-11-19)
+
+- Release packaging: run the TypeScript build automatically before npm pack/publish.
+- Refresh install documentation to require --profile web.
+- Publish the first installable npm version for this plugin.

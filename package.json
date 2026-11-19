@@ -1,6 +1,6 @@
 {
   "name": "dsh-plugin-mcp-guard",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "DSH plugin: read-only /mcp-guard audit of configured MCP servers for risky settings. No connections, no command execution, no file writes.",
   "type": "module",
   "main": "lib/index.js",
@@ -31,7 +31,8 @@
     "build": "tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "npm run build && node tests/core.test.mjs && node tests/entry.test.mjs",
-    "pack:check": "npm pack --dry-run"
+    "pack:check": "npm pack --dry-run",
+    "prepack": "npm run build"
   },
   "dsh": {
     "bundle": {
