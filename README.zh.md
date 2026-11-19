@@ -7,7 +7,7 @@ MCP 配置会越攒越多：这里是明文 `http://` 端点，那里是 `permis
 ## 安装
 
 ```powershell
-dsh plugin add dsh-plugin-mcp-guard
+dsh plugin --profile web add dsh-plugin-mcp-guard
 ```
 
 要求 Node `^22.19.0 || >=24`，DSH `>=0.2.0-rc.2 <0.3.0`。
@@ -104,7 +104,7 @@ URL 会先缩成 `scheme://host`（去掉 userinfo、路径、查询串），命
 
 | 现象 | 原因 | 处理 |
 |---|---|---|
-| 找不到 `/mcp-guard` | bundle 行未安装 | 重跑 `dsh plugin add dsh-plugin-mcp-guard`，重启 DSH。 |
+| 找不到 `/mcp-guard` | bundle 行未安装 | 重跑 `dsh plugin --profile web add dsh-plugin-mcp-guard`，重启 DSH。 |
 | 提示 `no MCP servers configured` | 行配置里 `mcpServers` 为空或缺失 | 在 profile `cordis.patch.yml` 里加这个 map；安装的 patch 只放 `{}`。 |
 | 某服务显示 `DISABLED (skipped)` | 设置了 `disabled: true`（或字符串 `"true"`） | 想审查就删掉它。 |
 | 标记结果过期 | profile 的 `cordis.patch.yml` 覆盖了 bundle 行 | 后写者胜；改 profile 里的那一行并重启。 |

@@ -7,7 +7,7 @@ MCP configs accumulate quickly: a plain `http://` endpoint here, a `permissions:
 ## Install
 
 ```powershell
-dsh plugin add dsh-plugin-mcp-guard
+dsh plugin --profile web add dsh-plugin-mcp-guard
 ```
 
 Requires Node `^22.19.0 || >=24` and DSH `>=0.2.0-rc.2 <0.3.0`.
@@ -104,7 +104,7 @@ URLs are reduced to `scheme://host` with userinfo, path and query removed, and c
 
 | Symptom | Cause | Fix |
 |---|---|---|
-| `/mcp-guard` not found | Bundle row not installed | Re-run `dsh plugin add dsh-plugin-mcp-guard`, then restart DSH. |
+| `/mcp-guard` not found | Bundle row not installed | Re-run `dsh plugin --profile web add dsh-plugin-mcp-guard`, then restart DSH. |
 | `no MCP servers configured` | `mcpServers` is empty or missing in the row config | Add the map to the profile `cordis.patch.yml`; the installed patch only seeds `{}`. |
 | A server shows `DISABLED (skipped)` | `disabled: true` (or the string `"true"`) is set | Remove it if you want the server audited. |
 | Flags look outdated | Profile `cordis.patch.yml` overrides the bundle row | The last write wins — edit the profile row, then restart. |
