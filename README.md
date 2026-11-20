@@ -127,7 +127,7 @@ Tests are fully offline: synthetic config fixtures, no model, no network, no chi
 
 ## Demo
 
-![Demo](docs/demo.png)
+![Demo](https://raw.githubusercontent.com/SSHOOTING/dsh-plugin-mcp-guard/main/docs/demo.png)
 
 
 ## Listed in
